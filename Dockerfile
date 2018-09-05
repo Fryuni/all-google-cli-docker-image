@@ -4,7 +4,7 @@ RUN curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | 
        helm init --client-only && \
        helm plugin install https://github.com/nouney/helm-gcs
 
-RUN curl -L https://github.com/Praqma/helmsman/releases/download/v1.3.0-rc/helmsman_1.3.0-rc_linux_amd64.tar.gz | tar zx && \
+RUN curl -L https://github.com/Praqma/helmsman/releases/download/v1.5.0/Helmsman_1.5.0_linux_amd64.tar.gz | tar x && \
        mv helmsman /usr/local/bin/helmsman
 
 RUN pip install --no-cache-dir easygoogle \
