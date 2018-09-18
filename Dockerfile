@@ -9,7 +9,14 @@ RUN curl -L https://github.com/Praqma/helmsman/releases/download/v1.5.0/Helmsman
 
 RUN pip install --no-cache-dir easygoogle \
       ruamel.yaml \
-      google-cloud \
+      google-cloud-logging \
+      google-cloud-monitoring \
+      google-cloud-error-reporting \
+      google-cloud-storage \
+      google-cloud-datastore \
+      google-cloud-bigquery \
+      google-cloud-pubsub \
+      google-cloud-tasks \
       PyYAML \
       arrow && \
       python -m easygoogle.config
